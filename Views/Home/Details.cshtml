@@ -1,0 +1,15 @@
+@model Product
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h2>Product #@Model.Id</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>Name</dt>
+        <dd>@Model.Name</dd>
+        <dt>Price</dt>
+        <dd>@Model.Price</dd>
+    </dl>
+</div>
